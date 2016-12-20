@@ -62,7 +62,7 @@ define :celery_worker, :enable => true, :virtualenv => false, :startsecs => 10, 
       stderr_logfile params[:logfile]
       startsecs params[:startsecs]
       stopwaitsecs params[:stopwaitsecs]
-      killasgroup true
+      #killasgroup true
       priority 998
       action :supervise
     end
