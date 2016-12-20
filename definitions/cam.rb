@@ -62,7 +62,7 @@ define :celery_cam, :enable => true, :virtualenv => false, :startsecs => 10, :dj
       command celery_command
       directory params[:directory]
       autostart true
-      autorestart "true"
+      autorestart true
       user params[:user] if params[:user]
       stdout_logfile params[:logfile]
       stderr_logfile params[:logfile]
